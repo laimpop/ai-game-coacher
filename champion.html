@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Game Coacher — Анализ Чемпиона</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">AI Game Coacher</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="champion.html" class="active">Чемпионы</a></li>
+            <li><a href="coaching.html">Советы</a></li>
+            <li><a href="learn.html">Обучение</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="analyzer-container">
+        <section class="champion-selector">
+            <h2>Выберите чемпиона для анализа</h2>
+            <div class="search-wrapper">
+                <input type="text" id="championInput" placeholder="Начните вводить имя чемпиона...">
+                <div id="championSuggestions"></div>
+            </div>
+            <div id="championGrid" class="champion-grid">
+                <!-- Иконки чемпионов будут вставлены сюда с помощью JS -->
+            </div>
+        </section>
+
+        <section id="resultArea" class="result">
+            <p>Выберите чемпиона, чтобы увидеть детальный анализ...</p>
+        </section>
+    </div>
+</main>
+<footer>
+    <p>© 2025 AI Game Coacher</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

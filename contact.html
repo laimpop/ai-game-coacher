@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Game Coacher — Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">AI Game Coacher</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="champion.html">Чемпионы</a></li>
+            <li><a href="coaching.html">Советы</a></li>
+            <li><a href="learn.html">Обучение</a></li>
+            <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="contact">
+        <h2>Обратная связь</h2>
+        <form id="contactForm" action="https://formspree.io/f/movgllzy" method="POST">
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Ваше сообщение..." required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="formStatus" class="result" style="margin-top: 1rem; text-align: center;"></div>
+    </section>
+</main>
+<footer>
+    <p>© 2025 AI Game Coacher</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

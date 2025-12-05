@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Game Coacher — Советы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">AI Game Coacher</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="champion.html">Чемпионы</a></li>
+            <li><a href="coaching.html" class="active">Советы</a></li>
+            <li><a href="learn.html">Обучение</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="coaching">
+        <h2>Персональные советы от AI-тренера</h2>
+        <form id="coachingForm">
+            <label>Твоя роль:
+                <select id="roleSelect" name="role">
+                    <option value="Top">Top</option>
+                    <option value="Jungle">Jungle</option>
+                    <option value="Mid">Mid</option>
+                    <option value="ADC">ADC</option>
+                    <option value="Support">Support</option>
+                </select>
+            </label>
+            <label>Чемпион:
+                <input type="text" id="championName" name="champion" placeholder="Например, Ясуо">
+            </label>
+            <label>Что хочешь улучшить:
+                <select id="focusSelect" name="focus">
+                    <option value="Позиционирование">Позиционирование</option>
+                    <option value="Фарм">Фарм (убийство миньонов)</option>
+                    <option value="Вижен">Вижен (обзор и варды)</option>
+                    <option value="Тимфайты">Тимфайты (командные сражения)</option>
+                    <option value="Лайнинг">Лайнинг (игра на линии)</option>
+                </select>
+            </label>
+            <button type="submit">Получить совет</button>
+        </form>
+        <div id="adviceOutput" class="result">
+             <!-- Сгенерированный совет появится здесь -->
+        </div>
+    </section>
+</main>
+<footer>
+    <p>© 2025 AI Game Coacher</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
